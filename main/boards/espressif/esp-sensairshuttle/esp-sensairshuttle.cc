@@ -4,6 +4,7 @@
 #include "button.h"
 #include "config.h"
 #include "mcp_server.h"
+#include "uart_dog_controller.h"
 #include <wifi_station.h>
 #include <esp_log.h>
 #include <driver/i2c_master.h>
@@ -280,6 +281,10 @@ private:
 
     }
 
+    void InitializeTools() {
+        static UartDogController dog_controller(GPIO_NUM_4);
+    }
+
 public:
     EspSensairShuttle() : boot_button_(BOOT_BUTTON_GPIO) {
         InitializeI2c();
@@ -287,6 +292,7 @@ public:
         InitializeButtons();
         InitializeSpi();
         InitializeLcdDisplay();
+        InitializeTools();
     }
 
     virtual AudioCodec* GetAudioCodec() override
