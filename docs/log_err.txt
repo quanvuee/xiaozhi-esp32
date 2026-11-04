@@ -1,0 +1,126 @@
+E (4725) Expression_op: emote_set_icon_image(164): Not found:"icon_tips"
+I (4725) Application: Network connected
+I (4735) StateMachine: State: starting -> activating
+I (4735) Expression_load: Loading assets from partition: label=assets
+I (4865) mmap_assets: Partition 'assets' successfully created, version: 1.4.0
+I (4865) MODEL_LOADER: Successfully load srmodels
+I (4865) Expression_load: Found index.json, size: 2398
+I (4865) Expression_load: Found 20 emoji items
+I (4875) Expression_load: Found 6 icon items
+I (4875) Expression_load: Found 5 layout items
+E (4875) Expression_load: Invalid layout item 0: missing required fields
+E (4885) Expression_load: Invalid layout item 1: missing required fields
+E (4895) Expression_load: Invalid layout item 2: missing required fields
+E (4895) Expression_load: Invalid layout item 3: missing required fields
+E (4905) Expression_load: Invalid layout item 4: missing required fields
+I (4915) Expression_load: Foundfont: font_puhui_common_20_4.bin
+I (4915) EmoteDisplay: SetChatMessage: system,
+I (4925) EmoteDisplay: SetEmotion: robot_2
+E (4925) Expression_op: emote_set_emoji_animation(271): Not found:"robot_2"
+W (4935) EmoteDisplay: emotion "robot_2" not set: ESP_ERR_NOT_FOUND
+I (4935) EmoteDisplay: SetStatus: Checking for new version...
+I (4945) Ota: Current version: 2.5.3
+W (5455) wifi:<ba-add>idx:1, ifx:0, tid:4, TAHI:0x1008711, TALO:0x9dfb96d0, (ssn:1, win:64, cur_ssn:1), CONF:0xc0004001
+I (7825) HttpClient: Established new connection to api.tenclass.net:443 protocol=https cost=2880
+I (7975) HttpClient: HTTP connection closed
+I (7975) Ota: Current is the latest version
+I (7985) Ota: Running partition: ota_0
+I (7985) EmoteDisplay: SetStatus: Logging in...
+I (7985) MQTT: Connecting to endpoint api.tenclass.net:8883
+I (7985) MQTT: Resolved MQTT host api.tenclass.net -> 47.76.65.170
+I (8575) MQTT: Connected to endpoint
+I (8575) Application: Activation done
+I (8575) SystemInfo: free sram: 82831 minimal sram: 34952
+I (8585) StateMachine: State: activating -> idle
+I (8585) EmoteDisplay: ShowNotification: Ver 2.5.3
+W (8585) Expression_op: Failed to set label text
+E (8595) Expression_op: emote_set_icon_image(164): Not found:"icon_tips"
+I (8595) EmoteDisplay: SetChatMessage: system,
+I (8605) WifiStation: Setting WiFi power save level: LOW_POWER (MAX_MODEM)
+I (8605) wifi:Set ps type: 2, coexist: 0
+
+I (8615) EmoteDisplay: SetStatus: Standby
+E (8615) Expression_op: emote_set_label_clock(501): CLOCK_LABEL object not found
+W (8625) Expression_op: Failed to set clock label
+I (8625) EmoteDisplay: SetEmotion: neutral
+E (8635) Expression_op: emote_set_emoji_animation(277): neutral object not found
+W (8635) EmoteDisplay: emotion "neutral" not set: ESP_ERR_INVALID_STATE
+Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:1, p:0, (Apr 17 2026 17:27:52)
+I (8685) EspWakeWord: Wake word(wn9s_hiesp),freq: 16000, chunksize: 512
+I (8685) LiteAudioEngine: Initialized, WakeNet: yes
+E (8695) i2s_common: i2s_channel_disable(1516): the channel has not been enabled yet
+I (8695) I2S_IF: No paired data, current mode: playback
+I (8705) I2S_IF: PDM TX mode, data_bit: 16, slot_bit: 16, sample_rate: 24000, slot_mask: 0x1
+I (8715) Adev_Codec: Open codec device OK
+I (8715) AudioCodec: Set output enable to true
+I (8725) Application: Startup wake word hint: Say "Hi,ESP" to wake me.
+I (8725) EmoteDisplay: SetChatMessage: assistant, Say "Hi,ESP" to wake me.
+W (8735) Expression_op: Failed to set label text
+E (8735) Expression_op: emote_set_icon_image(164): Not found:"icon_speaker"
+I (8745) Adev_Codec: Open codec device OK
+I (8745) AudioCodec: Set input enable to true
+I (8755) AudioService: Resampling audio from 16000 to 24000
+I (9835) AudioCodec: Set output enable to false
+I (13765) ESP_SensairShuttle: TOUCH PRESS - count: 1, x: 4095, y: 4095
+I (13815) ESP_SensairShuttle: TOUCH RELEASE - total presses: 1
+I (13815) StateMachine: State: idle -> connecting
+I (13815) EmoteDisplay: SetStatus: Connecting...
+I (13825) EmoteDisplay: SetEmotion: neutral
+E (13825) Expression_op: emote_set_emoji_animation(277): neutral object not found
+W (13835) EmoteDisplay: emotion "neutral" not set: ESP_ERR_INVALID_STATE
+I (13835) EmoteDisplay: SetChatMessage: system,
+I (13845) WifiStation: Setting WiFi power save level: PERFORMANCE (NONE)
+I (13845) wifi:Set ps type: 0, coexist: 0
+
+I (14175) MQTT: Session ID: 9ab87f7b
+I (14185) WifiStation: Setting WiFi power save level: PERFORMANCE (NONE)
+I (14185) wifi:Set ps type: 0, coexist: 0
+
+I (14185) StateMachine: State: connecting -> listening
+I (14185) EmoteDisplay: SetStatus: Listening...
+E (14195) Expression_op: emote_set_icon_animation(212): Object not found
+W (14195) Expression_op: Failed to set listen animation
+E (14205) Expression_op: emote_set_icon_image(167): object not found
+I (14205) EmoteDisplay: SetEmotion: neutral
+E (14215) Expression_op: emote_set_emoji_animation(277): neutral object not found
+W (14225) EmoteDisplay: emotion "neutral" not set: ESP_ERR_INVALID_STATE
+I (17045) Application: >> Ừ.
+I (17045) EmoteDisplay: SetChatMessage: user, Ừ.
+W (17045) Expression_op: Failed to set label text
+E (17045) Expression_op: emote_set_icon_image(164): Not found:"icon_speaker"
+I (17065) StateMachine: State: listening -> speaking
+I (17075) EmoteDisplay: SetStatus: Speaking...
+W (17075) Expression_op: Failed to set label text
+E (17075) Expression_op: emote_set_icon_image(164): Not found:"icon_speaker"
+I (18205) EmoteDisplay: SetEmotion: happy
+E (18205) Expression_op: emote_set_emoji_animation(277): happy object not found
+W (18205) EmoteDisplay: emotion "happy" not set: ESP_ERR_INVALID_STATE
+I (18395) Application: << Gâu gâu! Chủ nhân ơi,
+I (18395) EmoteDisplay: SetChatMessage: assistant, Gâu gâu! Chủ nhân ơi,
+W (18395) Expression_op: Failed to set label text
+E (18405) Expression_op: emote_set_icon_image(164): Not found:"icon_speaker"
+E (18425) i2s_common: i2s_channel_disable(1516): the channel has not been enabled yet
+
+
+I (162215) Application: Abort speaking
+W (162215) MQTT: Received audio packet with wrong sequence: 471, expected: 468
+W (162215) MQTT: Received audio packet with wrong sequence: 475, expected: 472
+W (162225) MQTT: Received audio packet with wrong sequence: 478, expected: 477
+W (162235) MQTT: Received audio packet with wrong sequence: 485, expected: 480
+W (162245) MQTT: Received audio packet with wrong sequence: 487, expected: 486
+W (162275) MQTT: Received audio packet with wrong sequence: 494, expected: 489
+I (162705) Application: << 你要去哪里 我 我 我就去哪里
+I (162705) EmoteDisplay: SetChatMessage: assistant, 你要去哪里 我 我 我就去哪里
+W (162705) Expression_op: Failed to set label text
+E (162715) Expression_op: emote_set_icon_image(164): Not found:"icon_speaker"
+I (162725) StateMachine: State: speaking -> listening
+I (162725) EmoteDisplay: SetStatus: Listening...
+E (162725) Expression_op: emote_set_icon_animation(212): Object not found
+W (162735) Expression_op: Failed to set listen animation
+E (162735) Expression_op: emote_set_icon_image(167): object not found
+I (162745) EmoteDisplay: SetEmotion: neutral
+E (162745) Expression_op: emote_set_emoji_animation(277): neutral object not found
+W (162755) EmoteDisplay: emotion "neutral" not set: ESP_ERR_INVALID_STATE
+I (163115) Adev_Codec: Open codec device OK
+
+
