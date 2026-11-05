@@ -124,3 +124,41 @@ W (162755) EmoteDisplay: emotion "neutral" not set: ESP_ERR_INVALID_STATE
 I (163115) Adev_Codec: Open codec device OK
 
 
+
+
+
+
+
+CRASH after touch
+
+I (23467) SystemInfo: free sram: 87375 minimal sram: 38532
+I (27807) ESP_SensairShuttle: TOUCH PRESS - count: 1, x: 153, y: 82
+I (27907) ESP_SensairShuttle: TOUCH RELEASE - total presses: 1
+I (27907) AudioService: Enabling audio testing
+I (27907) StateMachine: State: wifi_configuring -> audio_testing
+I (27907) Adev_Codec: Open codec device OK
+I (27917) AudioCodec: Set input enable to true
+Guru Meditation Error: Core  0 panic'ed (Stack protection fault).
+
+Detected in task "audio_input" at 0x42074ab0
+--- 0x42074ab0: adc_parse_raw_data at D:/workspace/xiaozhi-esp32/managed_components/espressif__esp_codec_dev/platform/audio_codec_data_adc.c:180(inlined by) _adc_data_read at D:/workspace/xiaozhi-esp32/managed_components/espressif__esp_codec_dev/platform/audio_codec_data_adc.c:392
+Stack pointer: 0x40837760
+Stack bounds: 0x4083790c - 0x40838900
+
+
+--- Stack dump detected
+Core  0 register dump:
+MEPC    : 0x42074ab6  RA      : 0x420749de  SP      : 0x40837760  GP      : 0x40815b84
+--- 0x42074ab6: adc_parse_raw_data at D:/workspace/xiaozhi-esp32/managed_components/espressif__esp_codec_dev/platform/audio_codec_data_adc.c:181(inlined by) _adc_data_read at D:/workspace/xiaozhi-esp32/managed_components/espressif__esp_codec_dev/platform/audio_codec_data_adc.c:392
+--- 0x420749de: _adc_data_read at D:/workspace/xiaozhi-esp32/managed_components/espressif__esp_codec_dev/platform/audio_codec_data_adc.c:380
+TP      : 0x408388e0  T0      : 0x0000a1b0  T1      : 0x4080ef58  T2      : 0x0000a1b0
+--- 0x4080ef58: prvNotifyQueueSetContainer at D:/esp/release-v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:3382
+S0/FP   : 0x408387c0  S1      : 0x40838760  A0      : 0x40833e20  A1      : 0x40833a1c
+A2      : 0x00000400  A3      : 0x40837760  A4      : 0x00001000  A5      : 0x00000400
+A6      : 0x00000010  A7      : 0x0000a1ac  S2      : 0x000003c0  S3      : 0x00000000
+S4      : 0x00000002  S5      : 0x421f51c8  S6      : 0x00000000  S7      : 0x00000010
+S8      : 0x40833790  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x0000a1ae  T4      : 0x0000a1ae  T5      : 0x0000a1ae  T6      : 0x0000a1b0
+MSTATUS : 0x00001881  MTVEC   : 0x40800003  MCAUSE  : 0x0000001b  MTVAL   : 0x00000000
+--- 0x40800003: _vector_table at ??:?
+MHARTID : 0x00000000
